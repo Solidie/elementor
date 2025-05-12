@@ -25,12 +25,12 @@ $is_app_bar_active = Plugin::$instance->experiments->is_feature_active( App_Bar_
 <script type="text/template" id="tmpl-elementor-panel-menu">
 	<div id="elementor-panel-page-menu-content"></div>
 	<# if ( elementor.config.document.panel.needHelpUrl ) { #>
-	<div id="elementor-panel__editor__help">
+	<!-- <div id="elementor-panel__editor__help">
 		<a id="elementor-panel__editor__help__link" href="{{{ elementor.config.document.panel.needHelpUrl }}}" target="_blank">
 			<?php echo esc_html__( 'Need Help', 'elementor' ); ?>
 			<i class="eicon-help-o" aria-hidden="true"></i>
 		</a>
-	</div>
+	</div> -->
 	<# } #>
 </script>
 
@@ -178,12 +178,12 @@ $is_app_bar_active = Plugin::$instance->experiments->is_feature_active( App_Bar_
 	<# } #>
 	<div id="elementor-controls"></div>
 	<# if ( elementData.help_url ) { #>
-		<div id="elementor-panel__editor__help">
+		<!-- <div id="elementor-panel__editor__help">
 			<a id="elementor-panel__editor__help__link" href="{{ elementData.help_url }}" target="_blank">
 				<?php echo esc_html__( 'Need Help', 'elementor' ); ?>
 				<i class="eicon-help-o" aria-hidden="true"></i>
 			</a>
-		</div>
+		</div> -->
 	<# } #>
 
 	<# if ( elementData.upsale_data && elementData.upsale_data.condition ) { #>
