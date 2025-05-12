@@ -38,6 +38,7 @@ function echo_select_your_structure_title() {
 			<button type="button" class="elementor-add-section-area-button elementor-add-section-button" title="<?php echo esc_attr( $button_title ); ?>" aria-label="<?php echo esc_attr( $button_title ); ?>">
 				<i class="eicon-plus" aria-hidden="true"></i>
 			</button>
+			<?php /* ?>
 			<# if ( 'loop-item' !== elementor.documents.getCurrent()?.config?.type || elementorCommon.config.experimentalFeatures[ 'container' ] ) {
 				const additionalClass = 'loop-item' === elementor.documents.getCurrent()?.config?.type && elementor.documents.getCurrent()?.config?.settings?.settings?.source?.includes( 'taxonomy' )
 					? 'elementor-edit-hidden'
@@ -46,6 +47,7 @@ function echo_select_your_structure_title() {
 					<i class="eicon-folder" aria-hidden="true"></i>
 				</button>
 			<# } #>
+			<?php */ ?>
 			<div class="elementor-add-section-drag-title"><?php echo esc_html__( 'Drag widget here', 'elementor' ); ?></div>
 		</div>
 		<div class="e-view e-con-shared-styles e-con-select-type">
