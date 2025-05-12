@@ -140,6 +140,7 @@ export default class AiBehavior extends Marionette.Behavior {
 	}
 
 	onRender() {
+		return;
 		const isPromotion = ! this.config.is_get_started;
 		const buttonLabel = this.getAiButtonLabel();
 
