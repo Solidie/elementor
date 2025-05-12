@@ -10,10 +10,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <script type="text/template" id="tmpl-elementor-panel-elements">
 	<# if ( $e.components.get( 'document/elements' ).utils.allowAddingWidgets()) { #>
-	<div id="elementor-panel-elements-navigation" class="elementor-panel-navigation">
+	<!-- <div id="elementor-panel-elements-navigation" class="elementor-panel-navigation">
 		<button class="elementor-component-tab elementor-panel-navigation-tab" data-tab="categories"><?php echo esc_html__( 'Elements', 'elementor' ); ?></button>
 		<button class="elementor-component-tab elementor-panel-navigation-tab" data-tab="global"><?php echo esc_html__( 'Globals', 'elementor' ); ?></button>
-	</div>
+	</div> -->
 	<# } #>
 	<div id="elementor-panel-elements-search-area"></div>
 	<div id="elementor-panel-elements-notice-area"></div>
@@ -36,19 +36,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	$promotion_data_sticky = Filtered_Promotions_Manager::get_filtered_promotion_data( $promotion_data_sticky, 'elementor/editor/panel/get_pro_details-sticky', 'url' );
 	$has_pro = Utils::has_pro();
 	?>
-	<div id="elementor-panel-get-pro-elements" class="elementor-nerd-box">
+	<!-- <div id="elementor-panel-get-pro-elements" class="elementor-nerd-box">
 		<img class="elementor-nerd-box-icon" src="<?php echo ELEMENTOR_ASSETS_URL . 'images/go-pro.svg'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>" loading="lazy" alt="<?php echo esc_attr__( 'Upgrade', 'elementor' ); ?>" />
 		<div class="elementor-nerd-box-message"><?php echo esc_html( $get_pro_details['message'] ); ?></div>
 		<a class="elementor-button go-pro" target="_blank" href="<?php echo esc_url( $get_pro_details['link'] ); ?>"><?php echo esc_html( $get_pro_details['button_text'] ); ?></a>
-	</div>
+	</div> -->
 	<?php if ( ! $has_pro ) : ?>
-	<div id="elementor-panel-get-pro-elements-sticky">
+	<!-- <div id="elementor-panel-get-pro-elements-sticky">
 		<img class="elementor-nerd-box-icon" src="<?php echo ELEMENTOR_ASSETS_URL . 'images/unlock-sticky.svg'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>" loading="lazy" alt="<?php echo esc_attr__( 'Upgrade', 'elementor' ); ?>"/>
 		<div class="elementor-get-pro-sticky-message">
 			<?php echo esc_html( $promotion_data_sticky['message'] ); ?>
 			<a target="_blank" href="<?php echo esc_url( $promotion_data_sticky['url'] ); ?>"><?php echo esc_html( $promotion_data_sticky['button_text'] ); ?></a>
 		</div>
-	</div>
+	</div> -->
 	<?php endif; ?>
 </script>
 
