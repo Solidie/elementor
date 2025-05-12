@@ -288,12 +288,12 @@ class Elements_Manager {
 				'title' => esc_html__( 'Basic', 'elementor' ),
 				'icon' => 'eicon-font',
 			],
-			'pro-elements' => [
+			/* 'pro-elements' => [
 				'title' => esc_html__( 'Pro', 'elementor' ),
 				'promotion' => [
 					'url' => esc_url( 'https://go.elementor.com/go-pro-section-pro-widget-panel/' ),
 				],
-			],
+			], */
 			'helloplus' => [
 				'title' => esc_html__( 'Hello+', 'elementor' ),
 				'hideIfEmpty' => true,
@@ -302,7 +302,7 @@ class Elements_Manager {
 				'title' => esc_html__( 'General', 'elementor' ),
 				'icon' => 'eicon-font',
 			],
-			'link-in-bio' => [
+			/* 'link-in-bio' => [
 				'title' => esc_html__( 'Link In Bio', 'elementor' ),
 				'hideIfEmpty' => true,
 			],
@@ -319,7 +319,7 @@ class Elements_Manager {
 				'promotion' => [
 					'url' => esc_url( 'https://go.elementor.com/go-pro-section-woocommerce-widget-panel/' ),
 				],
-			],
+			], */
 		];
 
 		// Not using the `add_category` because it doesn't allow 3rd party to inject a category on top the others.
@@ -347,11 +347,11 @@ class Elements_Manager {
 		 */
 		do_action( 'elementor/elements/categories_registered', $this );
 
-		$this->categories['wordpress'] = [
+		/* $this->categories['wordpress'] = [
 			'title' => esc_html__( 'WordPress', 'elementor' ),
 			'icon' => 'eicon-wordpress',
 			'active' => false,
-		];
+		]; */
 	}
 
 	public function enqueue_elements_styles() {
