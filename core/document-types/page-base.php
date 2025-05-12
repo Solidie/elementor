@@ -90,13 +90,13 @@ abstract class PageBase extends Document {
 			],
 		] );
 
-		$document->add_control(
+		/* $document->add_control(
 			'hide_title',
 			[
 				'label' => esc_html__( 'Hide Title', 'elementor' ),
 				'type' => Controls_Manager::SWITCHER,
 				'description' => sprintf(
-					/* translators: 1: Link open tag, 2: Link close tag. */
+					// translators: 1: Link open tag, 2: Link close tag.
 					esc_html__( 'Set a different selector for the title in the %1$sLayout panel%2$s.', 'elementor' ),
 					'<a href="javascript: $e.run( \'panel/global/open\' ).then( () => $e.route( \'panel/global/settings-layout\' ) )">',
 					'</a>'
@@ -106,7 +106,7 @@ abstract class PageBase extends Document {
 					':root' => '--page-title-display: none',
 				],
 			]
-		);
+		); */
 
 		$document->end_injection();
 	}
@@ -250,7 +250,7 @@ abstract class PageBase extends Document {
 			);
 		}
 
-		if ( post_type_supports( $document->post->post_type, 'comments' ) ) {
+		/* if ( post_type_supports( $document->post->post_type, 'comments' ) ) {
 			$document->add_control(
 				'comment_status',
 				[
@@ -261,7 +261,7 @@ abstract class PageBase extends Document {
 					'separator' => 'before',
 				]
 			);
-		}
+		} */
 
 		$document->end_injection();
 	}
