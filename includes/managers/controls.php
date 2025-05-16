@@ -1069,8 +1069,6 @@ class Controls_Manager {
 	 * @param array          $additional_messages
 	 */
 	public function add_custom_css_controls( Controls_Stack $controls_stack, $tab = self::TAB_ADVANCED, $additional_messages = [] ) {
-		return;
-		
 		$controls_stack->start_controls_section(
 			'section_custom_css_pro',
 			[
@@ -1200,7 +1198,6 @@ class Controls_Manager {
 	 * @access public
 	 */
 	public function add_custom_attributes_controls( Controls_Stack $controls_stack, string $tab = self::TAB_ADVANCED ) {
-		return;
 		$controls_stack->start_controls_section(
 			'section_custom_attributes_pro',
 			[
@@ -1261,8 +1258,6 @@ class Controls_Manager {
 	}
 
 	public function add_display_conditions_controls( Controls_Stack $controls_stack ) {
-		return;
-		
 		if ( Utils::has_pro() ) {
 			return;
 		}
@@ -1294,8 +1289,6 @@ class Controls_Manager {
 	}
 
 	public function add_motion_effects_promotion_control( Controls_Stack $controls_stack ) {
-		return;
-
 		if ( Utils::has_pro() ) {
 			return;
 		}

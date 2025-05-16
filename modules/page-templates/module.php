@@ -265,9 +265,7 @@ class Module extends BaseModule {
 	 * @param Document $document   The document instance.
 	 * @param string   $control_id Optional. The control ID. Default is `template`.
 	 */
-	public function register_template_control( $document, $control_id = 'template' ) {
-		return;
-		
+	public function register_template_control( $document, $control_id = 'template' ) {		
 		if ( ! Utils::is_cpt_custom_templates_supported() ) {
 			return;
 		}

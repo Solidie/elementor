@@ -288,12 +288,12 @@ class Elements_Manager {
 				'title' => esc_html__( 'Basic', 'elementor' ),
 				'icon' => 'eicon-font',
 			],
-			/* 'pro-elements' => [
+			'pro-elements' => [
 				'title' => esc_html__( 'Pro', 'elementor' ),
 				'promotion' => [
 					'url' => esc_url( 'https://go.elementor.com/go-pro-section-pro-widget-panel/' ),
 				],
-			], */
+			],
 			'helloplus' => [
 				'title' => esc_html__( 'Hello+', 'elementor' ),
 				'hideIfEmpty' => true,
@@ -302,11 +302,11 @@ class Elements_Manager {
 				'title' => esc_html__( 'General', 'elementor' ),
 				'icon' => 'eicon-font',
 			],
-			/* 'link-in-bio' => [
+			'link-in-bio' => [
 				'title' => esc_html__( 'Link In Bio', 'elementor' ),
 				'hideIfEmpty' => true,
 			],
-			'theme-elements' => [
+			/* 'theme-elements' => [
 				'title' => esc_html__( 'Site', 'elementor' ),
 				'active' => false,
 				'promotion' => [

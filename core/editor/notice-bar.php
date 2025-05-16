@@ -113,7 +113,7 @@ class Notice_Bar extends Base_Object {
 			: esc_attr( $settings['icon'] );
 
 		?>
-		<!-- <div id="e-notice-bar" class="e-notice-bar">
+		<div id="e-notice-bar" class="e-notice-bar">
 			<i class="e-notice-bar__icon <?php echo esc_attr( $icon ); ?>"></i>
 
 			<?php
@@ -122,7 +122,7 @@ class Notice_Bar extends Base_Object {
 			?>
 
 			<i id="e-notice-bar__close" class="e-notice-bar__close eicon-close"></i>
-		</div> -->
+		</div>
 		<?php
 	}
 
