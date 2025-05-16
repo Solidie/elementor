@@ -56,7 +56,7 @@ export default class AiLayoutBehavior extends Marionette.Behavior {
 	}
 
 	onRender() {
-		const $button = jQuery( '<button>', {
+		/* const $button = jQuery( '<button>', {
 			type: 'button',
 			class: 'e-ai-layout-button elementor-add-section-area-button e-button-primary',
 			title: __( 'Build with AI', 'elementor' ),
@@ -74,6 +74,6 @@ export default class AiLayoutBehavior extends Marionette.Behavior {
 			<i class="eicon-ai" aria-hidden="true"></i>
 		` );
 
-		this.ui.addTemplateButton.after( $button );
+		this.ui.addTemplateButton.after( $button ); */
 	}
 }

@@ -8,6 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <script type="text/template" id="tmpl-elementor-template-library-header-actions">
+	<?php if ( current_user_can( 'manage_options' ) ): ?>
 	<?php if ( User::is_current_user_can_upload_json() ) { ?>
 		<div id="elementor-template-library-header-import" class="elementor-templates-modal__header__item">
 			<i class="eicon-upload-circle-o" aria-hidden="true" title="<?php esc_attr_e( 'Import Template', 'elementor' ); ?>"></i>
@@ -22,10 +23,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<i class="eicon-save-o" aria-hidden="true" title="<?php esc_attr_e( 'Save', 'elementor' ); ?>"></i>
 		<span class="elementor-screen-only"><?php echo esc_html__( 'Save', 'elementor' ); ?></span>
 	</div>
+	<?php endif; ?>
 </script>
 
 <script type="text/template" id="tmpl-elementor-template-library-header-menu">
+	<?php if ( current_user_can( 'manage_options' ) ): ?>
 	<# jQuery.each( tabs, ( tab, args ) => { #>
+	<?php else: ?>
+	<# jQuery.each( tabs, ( tab, args ) => {
+		if ( tab === 'templates/my-templates' ) return;
+	#>
+	<?php endif; ?>
 		<div class="elementor-component-tab elementor-template-library-menu-item" data-tab="{{{ tab }}}">{{{ args.title }}}</div>
 	<# } ); #>
 </script>
@@ -214,12 +222,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<# } #>
 	<div id="elementor-template-library-templates-container"></div>
 	<# if ( isRemote ) { #>
+		<?php /* ?>
 		<div id="elementor-template-library-footer-banner">
 			<img class="elementor-nerd-box-icon" src="<?php
 				Utils::print_unescaped_internal_string( ELEMENTOR_ASSETS_URL . 'images/information.svg' );
 			?>" loading="lazy" alt="<?php echo esc_attr__( 'Elementor', 'elementor' ); ?>" />
 			<div class="elementor-excerpt"><?php echo esc_html__( 'Stay tuned! More awesome templates coming real soon.', 'elementor' ); ?></div>
 		</div>
+		<?php */ ?>
 	<# } #>
 	<# if ( 'cloud' === activeSource ) { #>
 		<div id="elementor-template-library-load-more-anchor" class="elementor-visibility-hidden"><i class="eicon-loading eicon-animation-spin"></i></div>
@@ -549,10 +559,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 		<# } #>
 	</form>
+	<?php /* ?>
 	<div class="elementor-template-library-blank-footer">
 		<?php echo esc_html__( 'Learn more about the', 'elementor' ); ?>
 		<a class="elementor-template-library-blank-footer-link" href="https://go.elementor.com/docs-library/" target="_blank"><?php echo esc_html__( 'Template Library', 'elementor' ); ?></a>
 	</div>
+	<?php */ ?>
 </script>
 
 <script type="text/template" id="tmpl-elementor-template-library-import">
@@ -565,10 +577,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div id="elementor-template-library-import-form-or"><?php echo esc_html__( 'or', 'elementor' ); ?></div>
 		<label for="elementor-template-library-import-form-input" id="elementor-template-library-import-form-label" class="elementor-button e-primary"><?php echo esc_html__( 'Select File', 'elementor' ); ?></label>
 		<input id="elementor-template-library-import-form-input" type="file" name="file" accept=".json,.zip" required/>
+		<?php /* ?>
 		<div class="elementor-template-library-blank-footer">
 			<?php echo esc_html__( 'Learn more about the', 'elementor' ); ?>
 			<a class="elementor-template-library-blank-footer-link" href="https://go.elementor.com/docs-library/" target="_blank"><?php echo esc_html__( 'Template Library', 'elementor' ); ?></a>
 		</div>
+		<?php */ ?>
 	</form>
 </script>
 
@@ -579,10 +593,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="elementor-template-library-cloud-empty__button"></div>
 
+	<?php /* ?>
 	<div class="elementor-template-library-blank-footer">
 		<?php echo esc_html__( 'Learn more about the', 'elementor' ); ?>
 		<a class="elementor-template-library-blank-footer-link" href="https://go.elementor.com/docs-library/" target="_blank"><?php echo esc_html__( 'Template Library', 'elementor' ); ?></a>
 	</div>
+	<?php */ ?>
 </script>
 
 <script type="text/template" id="tmpl-elementor-template-library-preview">

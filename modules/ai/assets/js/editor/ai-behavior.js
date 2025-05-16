@@ -140,8 +140,7 @@ export default class AiBehavior extends Marionette.Behavior {
 	}
 
 	onRender() {
-		return;
-		const isPromotion = ! this.config.is_get_started;
+		/* const isPromotion = ! this.config.is_get_started;
 		const buttonLabel = this.getAiButtonLabel();
 
 		let buttonClass = 'e-ai-button';
@@ -177,6 +176,6 @@ export default class AiBehavior extends Marionette.Behavior {
 
 		$wrap.after(
 			$button,
-		);
+		); */
 	}
 }
