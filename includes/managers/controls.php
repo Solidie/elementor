@@ -1069,6 +1069,7 @@ class Controls_Manager {
 	 * @param array          $additional_messages
 	 */
 	public function add_custom_css_controls( Controls_Stack $controls_stack, $tab = self::TAB_ADVANCED, $additional_messages = [] ) {
+		return;
 		$controls_stack->start_controls_section(
 			'section_custom_css_pro',
 			[
