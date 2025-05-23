@@ -292,6 +292,7 @@ class Module extends BaseModule {
 	 * The $options variable is an array of $control_options to overwrite the default.
 	 */
 	public function add_template_controls( Document $document, $control_id, $control_options ) {
+		return;
 		// Default Control Options
 		$default_control_options = [
 			'label' => esc_html__( 'Page Layout', 'elementor' ),

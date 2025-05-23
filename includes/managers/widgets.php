@@ -105,11 +105,11 @@ class Widgets_Manager {
 			'social-icons',
 			'alert',
 			'audio',
-			'shortcode',
+			// 'shortcode',
 			'html',
 			'menu-anchor',
-			'sidebar',
-			'read-more',
+			// 'sidebar',
+			// 'read-more',
 			'rating',
 		];
 
