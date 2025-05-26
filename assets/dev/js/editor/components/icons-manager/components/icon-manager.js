@@ -211,12 +211,13 @@ class IconsManager extends Component {
 			};
 		}
 
-		return (
+		return null
+		/* return (
 			<div id="elementor-icons-manager__upload">
 				<div id="elementor-icons-manager__upload__title">{ __( 'My Libraries', 'elementor' ) }</div>
 				<button id="elementor-icons-manager__upload__button" className="elementor-button" onClick={ onClick }>{ __( 'Upload', 'elementor' ) }</button>
 			</div>
-		);
+		); */
 	}
 
 	getSearchHTML() {

@@ -88,7 +88,9 @@ class Control_Icons extends Control_Base_Multiple {
 					</div>
 					<div class="elementor-control-media__tools elementor-control-dynamic-switcher-wrapper">
 						<div class="elementor-control-icon-picker elementor-control-media__tool"><?php echo esc_html__( 'Icon Library', 'elementor' ); ?></div>
+						<?php /* ?>
 						<div class="elementor-control-svg-uploader elementor-control-media__tool"><?php echo esc_html__( 'Upload SVG', 'elementor' ); ?></div>
+						<?php */ ?>
 					</div>
 				</div>
 			</div>
