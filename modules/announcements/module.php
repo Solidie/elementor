@@ -170,6 +170,7 @@ class Module extends BaseApp {
 	}
 
 	public function on_elementor_init() {
+		return;
 		if ( empty( $this->get_active_announcements() ) ) {
 			return;
 		}
